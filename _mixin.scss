@@ -1,0 +1,16 @@
+@mixin border1(){
+    border-left: 1px solid $color_quill_gray_approx;
+}
+
+@mixin border2(){
+    border-right: 1px solid $color_quill_gray_approx;
+}
+
+
+header nav>ul>li>a{
+    @include border1;
+}
+
+header nav>ul>li>a:last-child{
+    @include border2;
+}
